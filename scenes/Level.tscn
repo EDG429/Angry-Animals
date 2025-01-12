@@ -12,3 +12,4 @@ texture = ExtResource("1_la352")
 
 [node name="Animal" parent="." instance=ExtResource("2_0jub0")]
 position = Vector2(444, 159)
+freeze = true
