@@ -10,10 +10,10 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_o5jkl"]
 radius = 19.0
 
-[node name="Animal" type="RigidBody2D" node_paths=PackedStringArray("_label", "_stretchSound", "_launchSound", "_kickSound", "_arrow", "_visibleOnScreenNotifier")]
+[node name="Animal" type="RigidBody2D" node_paths=PackedStringArray("_debugLabel", "_stretchSound", "_launchSound", "_kickSound", "_arrow", "_visibleOnScreenNotifier")]
 input_pickable = true
 script = ExtResource("1_oto60")
-_label = NodePath("DebugLabel")
+_debugLabel = NodePath("DebugLabel")
 _stretchSound = NodePath("StretchSound")
 _launchSound = NodePath("LaunchSound")
 _kickSound = NodePath("KickSound")
@@ -33,6 +33,7 @@ offset_top = -35.0
 offset_right = 339.0
 offset_bottom = 53.0
 scale = Vector2(0.148999, 0.148999)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "placeholder"
 

@@ -4,7 +4,7 @@ using System;
 public partial class Animal : RigidBody2D
 {
 	public enum AnimalState {READY, DRAG, RELEASE}
-	[Export] private Label _label;
+	[Export] private Label _debugLabel;
 	[Export] private AudioStreamPlayer2D _stretchSound;
 
 	[Export] private AudioStreamPlayer2D _launchSound;
@@ -36,22 +36,48 @@ public partial class Animal : RigidBody2D
 		_arrowScaleX = _arrow.Scale.X;
 		_arrow.Hide();
 	}
+	private void ChangeState(AnimalState newState)
+	{
+
+	}
+
+	private void StartDragging()
+	{
+		
+	}
+
+	private void StartRelease()
+	{
+		
+	}
+
 	private void OnInputEvent(Node viewport, InputEvent @event, long shapeIdx)
 	{
-		throw new NotImplementedException();
+		//GD.Print(@event);
+		if (_state == AnimalState.READY && @event.IsActionPressed("drag"))
+		{
+			GD.Print("drag");
+		}
 	}
 	private void OnScreenExited()
 	{
-		throw new NotImplementedException();
+		
 	}
 
 	private void OnSleepingStateChanged()
 	{
-		throw new NotImplementedException();
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _PhysicsProcess(double delta)
 	{
+		UpdateDebugLabel();
 	}
+
+	private void UpdateDebugLabel()
+	{
+		_debugLabel.Text = $"St:{_state} Sl:{Sleeping}";
+	}
+
 }
