@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://cmf7gufe8ln8c"]
 
 [ext_resource type="Script" path="res://classes/Animal.cs" id="1_oto60"]
-[ext_resource type="Texture2D" uid="uid://r6304kard7ux" path="res://assets/player/parrot.png" id="1_xvt6t"]
-[ext_resource type="Texture2D" uid="uid://bewsktxf0b0kl" path="res://assets/items/arrow.png" id="2_c3mtf"]
-[ext_resource type="AudioStream" uid="uid://buq8qb3iitatj" path="res://assets/audio/stretch2.ogg" id="3_qairn"]
-[ext_resource type="AudioStream" uid="uid://8m4sseani8db" path="res://assets/audio/catapult.ogg" id="4_d642d"]
-[ext_resource type="AudioStream" uid="uid://bkmrr1t5lngu0" path="res://assets/audio/kick_wood.ogg" id="5_oguye"]
+[ext_resource type="Texture2D" uid="uid://2rndgupjk1mu" path="res://assets/player/parrot.png" id="1_xvt6t"]
+[ext_resource type="Texture2D" uid="uid://7t3qw4ghpae6" path="res://assets/items/arrow.png" id="2_c3mtf"]
+[ext_resource type="AudioStream" uid="uid://cs8b3c7fsowo" path="res://assets/audio/stretch2.ogg" id="3_qairn"]
+[ext_resource type="AudioStream" uid="uid://b5gul6mh2w44o" path="res://assets/audio/catapult.ogg" id="4_d642d"]
+[ext_resource type="AudioStream" uid="uid://cb5far8fc2q77" path="res://assets/audio/kick_wood.ogg" id="5_oguye"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o5jkl"]
 radius = 19.0

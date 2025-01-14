@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyvhcarae12e3"]
 
-[ext_resource type="Texture2D" uid="uid://b00fd5ja8rcte" path="res://assets/scene/colored_castle.png" id="1_la352"]
+[ext_resource type="Texture2D" uid="uid://cv87j4you8pax" path="res://assets/scene/colored_castle.png" id="1_la352"]
 [ext_resource type="PackedScene" uid="uid://cmf7gufe8ln8c" path="res://scenes/Animal.tscn" id="2_0jub0"]
 
 [node name="Level" type="Node2D"]
