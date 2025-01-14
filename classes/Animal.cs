@@ -15,6 +15,7 @@ public partial class Animal : RigidBody2D
 	private AnimalState _state = AnimalState.READY;
 	private float _arrowScaleX = 0.0f;
 	private Vector2 _start = Vector2.Zero;
+	private Vector2 _dragStart = Vector2.Zero;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -38,12 +39,18 @@ public partial class Animal : RigidBody2D
 	}
 	private void ChangeState(AnimalState newState)
 	{
-
+		_state = newState;
+		switch (_state) 
+		{
+			case AnimalState.DRAG: StartDragging();break;
+			case AnimalState.RELEASE: StartRelease(); break;
+		}
 	}
 
 	private void StartDragging()
 	{
-		
+		_dragStart = GetGlobalMousePosition();
+		_arrow.Show();
 	}
 
 	private void StartRelease()
@@ -57,6 +64,7 @@ public partial class Animal : RigidBody2D
 		if (_state == AnimalState.READY && @event.IsActionPressed("drag"))
 		{
 			GD.Print("drag");
+			ChangeState(AnimalState.DRAG);
 		}
 	}
 	private void OnScreenExited()
