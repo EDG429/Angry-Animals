@@ -12,6 +12,8 @@ radius = 19.0
 
 [node name="Animal" type="RigidBody2D" node_paths=PackedStringArray("_debugLabel", "_stretchSound", "_launchSound", "_kickSound", "_arrow", "_visibleOnScreenNotifier")]
 input_pickable = true
+sleeping = true
+can_sleep = false
 freeze = true
 script = ExtResource("1_oto60")
 _debugLabel = NodePath("DebugLabel")
